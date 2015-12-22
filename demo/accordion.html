@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DEMO: Accordion UI</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .row:first-of-type+.row {
+            margin-top: 30px;
+        }
+        a.panel-heading {
+            display: block;
+        }
+        .panel-body {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="row">
+        <h1 class="text-center">DEMO: Accordion UI</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <section class="panel panel-default">
+                <a href="#sect01" class="panel-heading">
+                    <h2 class="panel-title">タイトル</h2>
+                </a>
+
+                <div class="panel-body" id="sect01">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda eveniet nam neque nesciunt non qui ratione saepe ut veniam. Aliquam consequuntur debitis deserunt dolores recusandae repellendus tempora voluptatem! Laboriosam?</p>
+                </div>
+            </section>
+
+            <section class="panel panel-default">
+                <a href="#sect02" class="panel-heading">
+                    <h2 class="panel-title">タイトル</h2>
+                </a>
+
+                <div class="panel-body" id="sect02">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda eveniet nam neque nesciunt non qui ratione saepe ut veniam. Aliquam consequuntur debitis deserunt dolores recusandae repellendus tempora voluptatem! Laboriosam?</p>
+                </div>
+            </section>
+
+            <section class="panel panel-default">
+                <a href="#sect03" class="panel-heading">
+                    <h2 class="panel-title">タイトル</h2>
+                </a>
+
+                <div class="panel-body" id="sect03">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda eveniet nam neque nesciunt non qui ratione saepe ut veniam. Aliquam consequuntur debitis deserunt dolores recusandae repellendus tempora voluptatem! Laboriosam?</p>
+                </div>
+            </section>
+
+            <section class="panel panel-default">
+                <a href="#sect04" class="panel-heading">
+                    <h2 class="panel-title">タイトル</h2>
+                </a>
+
+                <div class="panel-body" id="sect04">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda eveniet nam neque nesciunt non qui ratione saepe ut veniam. Aliquam consequuntur debitis deserunt dolores recusandae repellendus tempora voluptatem! Laboriosam?</p>
+                </div>
+            </section>
+
+            <section class="panel panel-default">
+                <a href="#sect05" class="panel-heading">
+                    <h2 class="panel-title">タイトル</h2>
+                </a>
+
+                <div class="panel-body" id="sect05">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda eveniet nam neque nesciunt non qui ratione saepe ut veniam. Aliquam consequuntur debitis deserunt dolores recusandae repellendus tempora voluptatem! Laboriosam?</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</div>
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+    $(function() {
+        // タイトルがクリックされたときの処理を定義する
+        $('a.panel-heading').on('click', null, function(ev) {
+            ev.preventDefault();
+
+            /*
+             クリックされた要素の
+             hrefに指定されたidで
+             対象の要素を取得して
+             表示・非表示を切り替える
+             */
+            $(this.hash).slideToggle();
+        });
+    });
+</script>
+</body>
+</html>
