@@ -5,6 +5,7 @@
  */
 @import url(../../lib/font/league-gothic/league-gothic.css);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -19,7 +20,7 @@ body {
   background-color: #f7f3de; }
 
 .reveal {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Noto Sans Japanese", sans-serif;
   font-size: 36px;
   font-weight: normal;
   color: #333; }
@@ -45,7 +46,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #333;
-  font-family: "League Gothic", Impact, sans-serif;
+  font-family: "League Gothic", "Noto Sans Japanese", Impact, sans-serif;
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
